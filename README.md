@@ -10,7 +10,13 @@ Nonnegative Tensor Networks:
 After starting Julia, execute:
 
 ```julia
-import Pkg; Pkg.add("https://github.com/TensorDecompositions/NTNk.jl.git")
+import Pkg; Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NTNk.jl.git", rev="master"))
+```
+
+or
+
+```julia
+import Pkg; Pkg.dev("https://github.com/TensorDecompositions/NTNk.jl.git")
 ```
 
 ### Tensor Decomposition
