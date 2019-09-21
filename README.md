@@ -5,30 +5,16 @@ Nonnegative Tensor Networks:
 * Hierarchical Tucker
 * Tensor Train
 
+**NTNk** provides high-performance computing capabilities to solve problems with Shared and Distributed Arrays in parallel.
+The parallelization allows for utilization of multi-core / multi-processor environments.
+GPU and TPU accelerations are also available through existing Julia packages.
+
 ### Installation
 
 After starting Julia, execute:
 
 ```julia
-import Pkg
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NMFk.jl.git", rev="master"))
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/CanDecomp.jl.git", rev="master"))
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/LoadTensorDecompositions.jl.git", rev="master"))
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/TensorDecompositions2.jl.git", rev="master"))
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NTFk.jl.git", rev="master"))
-Pkg.add(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NTNk.jl.git", rev="master"))
-```
-
-or
-
-```julia
-import Pkg
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NMFk.jl.git"))
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/CanDecomp.jl.git"))
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/LoadTensorDecompositions.jl.git"))
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/TensorDecompositions2.jl.git"))
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NTFk.jl.git"))
-Pkg.develop(Pkg.PackageSpec(url="https://github.com/TensorDecompositions/NTNk.jl.git"))
+import Pkg; Pkg.add("NTNk")
 ```
 
 ### Tensor Decomposition
