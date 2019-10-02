@@ -1,7 +1,7 @@
 name = "NTNk"
 uuid = "530fd2b5-bc52-54ba-93c2-82eb6468edee"
 authors = ["Velimir V Vesselinov (monty) <velimir.vesselinov@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 NMFk = "e40cd9e2-a1df-5d90-a1fa-603fdc3dbdd8"
