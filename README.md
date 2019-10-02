@@ -17,6 +17,13 @@ After starting Julia, execute:
 import Pkg; Pkg.add("NTNk")
 ```
 
+Docker
+-------
+
+```bash
+docker run --interactive --tty montyvesselinov/ntnk
+```
+
 ### Tensor Decomposition
 
 **NTFk** performs a novel unsupervised Machine Learning (ML) method based on Tensor Decomposition coupled with sparsity and nonnegativity constraints.
