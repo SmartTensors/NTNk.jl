@@ -52,4 +52,6 @@ end
 
 include("NTNkExecute.jl")
 
+NTNk.welcome()
+
 end
