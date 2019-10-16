@@ -1,5 +1,3 @@
-import NMFk
-import NTFk
 
 """
 Hierarchical Tucker
