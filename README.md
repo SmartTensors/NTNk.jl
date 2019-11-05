@@ -17,11 +17,18 @@ After starting Julia, execute:
 import Pkg; Pkg.add("NTNk")
 ```
 
+o access the latest released version.
+To utilize the latest updates (commits) use:
+
+```julia
+import Pkg; Pkg.add(Pkg.PackageSpec(name="NTNk", rev="master"))
+```
+
 Docker
 -------
 
 ```bash
-docker run --interactive --tty montyvesselinov/ntnk
+docker run --interactive --tty montyvesselinov/tensors
 ```
 
 ### Tensor Decomposition
