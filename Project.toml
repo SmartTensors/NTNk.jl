@@ -1,7 +1,7 @@
 name = "NTNk"
 uuid = "530fd2b5-bc52-54ba-93c2-82eb6468edee"
 authors = ["Velimir V Vesselinov (monty) <velimir.vesselinov@gmail.com>"]
-version = "0.4.0"
+version = "1.0.0"
 
 [deps]
 NMFk = "e40cd9e2-a1df-5d90-a1fa-603fdc3dbdd8"
@@ -10,8 +10,8 @@ Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
-NMFk = "1.0"
-NTFk = "0.4"
+NMFk = "1"
+NTFk = "1"
 julia = "1.5"
 
 [extras]
