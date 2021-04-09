@@ -2,7 +2,7 @@
 """
 Hierarchical Tucker
 """
-function execute(X::AbstractArray{T,N}, nlevels::Integer=10; csizes::Vector{NTuple{N,Int}}=[size(X)], nTF::Integer=1, eigmethod=ntuple(i->false, length(csizes[1])), prefix="", kw...) where {T,N}
+function execute(X::AbstractArray{T,N}, nlevels::Integer=10; csizes::Vector{NTuple{N,Int}}=[size(X)], nTF::Integer=1, eigmethod=ntuple(i->false, length(csizes[1])), prefix="", kw...) where {T <: Number, N}
 	Xl = Vector{Array{T,N}}(undef, nlevels)
 	sl = Vector{typeof(csizes[1])}(undef, nlevels)
 	local X1
@@ -31,7 +31,7 @@ end
 """
 Tensor Train
 """
-function execute(X::AbstractArray{T,N}, nk::Vector{Int}; order::AbstractRange=1:N, save::Bool=false, kw...) where {T,N}
+function execute(X::AbstractArray{T,N}, nk::Vector{Int}; order::AbstractRange=1:N, save::Bool=false, kw...) where {T <: Number, N}
 	sz = collect(size(X))
 	Wl = Vector{Matrix{T}}(undef, N)
 	local X1
